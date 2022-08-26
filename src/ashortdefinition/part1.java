@@ -1,0 +1,228 @@
+package ashortdefinition;
+
+public class part1 {
+    /*
+    Day 3
+
+
+
+				Topics  :
+							- Switch Case
+
+							- Scanner Class
+
+							- String Methods
+
+									charAt length
+
+									toUpperCase() toLowerCase() trim()
+
+									replace() replaceFirst()
+
+									lastIndexOf() indexOf
+
+									substring
+
+									isEmpty
+
+									equals Vs == Operator
+
+									equalsIgnoreCase
+
+
+
+
+				===  Create a package named "day03_07_13_2022"   ===
+
+
+            Topic : Switch Case
+
+                -  we can not use   boolean-float-double-long with switch
+                -  exact matching is important
+
+
+        switch(expression){
+
+
+                case constant1 :       // No curly brackets
+
+                    statements
+                    .
+                    ..
+                    ...
+                    break;            // All the case block stements are OPTIONAL including break.Black case is totaly legally code
+
+               case constant2 :        // constant2 or constant3 or constant4    ||
+               case constant3 :
+               case constant4 :
+
+                    statements
+                    .
+                    ..
+                    ...
+
+               default  :            // we can put this anywhere in switch statement
+
+                    statements
+                    .
+                    ..
+                    ...
+                    break;
+
+
+        }
+
+              Task 1: Get two numbers and operator
+
+
+                   Create simple calculator
+                    case 1 +
+                    case 2 *
+                    case 3 -
+                    case 4 /
+                    default:
+
+              Task 2: Create  a program that accepts animal as String
+
+							DOG 	- domestic animal
+							CAT 	- domestic animal
+							TIGER 	- wild  animal
+
+							For other animal - unknown animal
+
+							INPUT : DOG 		EXPECTED OUTPUT : DOG is domestic animal
+
+
+			Topic : Scanner Classes
+
+
+
+					1.EstimatedTimeCalculator
+
+   							Assume that you have a plan to go from A to B point
+   							maxSpeed=80
+   							minSpeed=40
+
+   							- Ask the User
+   								- Car speed
+   											should be 40 - 80 mph
+   										-> if user enters smaller than minSpeed
+   																or
+   													 	   bigger than maxSpeed
+   										-   assign for speed 60 as default
+   										-   otherwise assign for speed userInput(int)
+
+   								- startingpoint(string) and destination(string)
+   								- distance between this two points(double)
+
+   								According to this information calculate triptime;
+
+   								Formula of estimatedTime = distance/speed;
+
+   							   	Ex :
+
+   										Inputs :50,San Antonio,Dallas,300
+
+   										"The Estimated Time Of Arrival is 6.0 hours from San Antonio to Dallas "
+
+				---------------------------------------
+
+   					2.CarpetShop
+
+						- Ask the user which room do they need carpet? (String)
+									List of Rooms
+										Bedroom
+										Kitchen
+
+				            -> If the user gives other than these roomTypes ,  give an error message about "Invalid Room Type"
+
+				        - Ask the user roomType dimensions (as meter and double)
+				        		Kitchen is circle.Take radius from user
+				        		Bedroom is square or Rectangle.Take lenght and width from user
+
+				        - Ask the user to delivery address (String, multiple words)
+				        - unitPriceForCarpet = 3.92
+				        - totalcost = area*unitPriceForCarpet;
+
+				        - Print in the following format:
+				            Ex:
+				                inputs: Bedroom,length 4,width 3,1300 Lamar St Houston TX 77010
+
+				                 "TotalCost for your carpet is 51.84 and it will be delivery 1300 Lamar St Houston TX 77010 in one week"
+
+
+			Topic : String Methods
+
+
+				Intro : String Pool
+						equals Vs == Operator
+						equalsIgnoreCase
+
+				---------------------------------------
+
+				(substring-length-concat)
+
+ 				1. Create a method return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.
+
+						Input: "Hello" → "lololo"
+						Input: "ab"    → "ababab"
+						Input:  "Hi"   → "HiHiHi"
+
+				---------------------------------------
+				(substring-length-isEmpty)
+
+				2.Given a string, return the string made of its first two chars, so the String "Hello" yields "He". If the string is shorter than length 2, return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "".
+
+					Input :"Hello"   → "He"
+					Input :"abcdefg" → "ab"
+					Input :"a"	     → "a"
+					Input :""	     → "It can not be empty"
+				---------------------------------------
+
+                (length-substring || replace )
+
+			    3.Given a string, return a version without the first and last char, so "Hello" yields "ell".
+			      The string length will be at least 2.
+
+					Input : "Hello" → "ell"
+					Input : "java" → "av"
+					Input : "coding" → "odin"
+
+				---------------------------------------
+
+				(lowercase - substring - length )
+
+    			4.Ask the user enter a word with at least 3 characters
+
+				    	print first - last - middle character
+
+				    	if word length is even  print out 2 char from middle as in example
+
+				    		Input : Cybertek
+				    				first character :C //make it lowercase
+				    				last character  :k
+				    				middle characters:er
+
+				        if word length is odd  print out  char from middle as in example
+
+				    		Input : Statement
+				    				first character :s //make it lowercase
+				    				last character  :k
+				    				middle characters:e
+				---------------------------------------
+
+				(indexOf - length - substring - lowercase )
+
+				5.Creating an email
+
+				    Ask user to enter fullname. FirstName and lastName should be at least 6 character long.
+				    If they are shorter than that print “Invalid data” and program should end.
+				    If the information provided is valid, you will take the first 4 characters of first string and combine them with the last three characters of the second string. At the end of your combined string add “@cybertek.com” and print the final string as your created email.
+				    The final email should be in all lowercase.
+
+				    input: JamesBond Secret
+				    output: jameret@cybertek.com
+
+
+     */
+}
