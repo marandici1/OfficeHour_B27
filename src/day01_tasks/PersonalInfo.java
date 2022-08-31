@@ -1,4 +1,4 @@
-package day1_tasks;
+package day01_tasks;
 
 public class PersonalInfo {
     public static void main(String[] args) {
